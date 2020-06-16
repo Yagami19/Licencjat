@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PortalCamera : MonoBehaviour
 {
-    public Transform playerCamera;
-    public Transform Portal;
-    public Transform otherPortal;
+    public Transform playerCam;
+    public Transform portalOne;
+    public Transform portalTwo;
 
 
 
@@ -15,7 +15,7 @@ public class PortalCamera : MonoBehaviour
 
     {
 
-        Vector3 playerOffsetFromPortal = playerCamera.position - otherPortal.position;
-        transform.position = Portal.position + playerOffsetFromPortal;
+        Vector3 playerPositionFromPortal = playerCam.position - portalTwo.position;
+        transform.position = portalOne.position + playerPositionFromPortal;
     }
 }

@@ -20,6 +20,61 @@ public class ScreenSizeSetup : MonoBehaviour
     public Material cameraMatYellow2;
 
 
+
+
+
+
+
+    //variables yellow to yellow roundabout
+
+    public Camera cameraYRoundaboutEntry;
+    public Material cameraMatYRoundaboutEntry;
+
+
+    public Camera cameraYRoundaboutExit;
+    public Material cameraMatYRoundaboutExit;
+
+    //
+
+
+
+    //variables yellow rounabout to green
+
+    public Camera cameraYRoundaboutToGreenEntry;
+    public Material cameraMatYRoundaboutToGreenEntry;
+
+
+    public Camera cameraYRoundaboutToGreenExit;
+    public Material cameraMatYRoundaboutToGreenExit;
+
+    //
+
+
+    //vars green to green roundabout
+
+
+    public Camera cameraGToRoundaboutEntry;
+    public Material cameraMatGToRoundaboutEntry;
+
+
+    public Camera cameraGToRoundaboutExit;
+    public Material cameraMatGToRoundaboutExit;
+    //
+
+
+
+    //VARIABLES green roundabout TO red room
+    public Camera cameraGRoundaboutToRedEntry;
+    public Material cameraMatGRoundaboutToRedEntry;
+
+
+    public Camera cameraGRoundaboutToRedExit;
+    public Material cameraMatGRoundaboutToRedExit;
+
+    //
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,13 +128,164 @@ public class ScreenSizeSetup : MonoBehaviour
 
 
         //
+
+
+
+
+
+
+
+        //SETTING YELLOW TO ROUNDABOUT CAMERAS
+        if (cameraYRoundaboutEntry.targetTexture != null)
+        {
+            cameraYRoundaboutEntry.targetTexture.Release();
+
+
+        }
+
+        cameraYRoundaboutEntry.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatYRoundaboutEntry.mainTexture = cameraYRoundaboutEntry.targetTexture;
+
+
+
+
+
+
+        if (cameraYRoundaboutExit.targetTexture != null)
+        {
+            cameraYRoundaboutExit.targetTexture.Release();
+
+
+        }
+
+        cameraYRoundaboutExit.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatYRoundaboutExit.mainTexture = cameraYRoundaboutExit.targetTexture;
+
+
+
+        //
+
+
+
+
+
+        //SETTING YELLOW TO GREEN CAMERAS
+        if (cameraYRoundaboutToGreenEntry.targetTexture != null)
+        {
+            cameraYRoundaboutToGreenEntry.targetTexture.Release();
+
+
+        }
+
+        cameraYRoundaboutToGreenEntry.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatYRoundaboutToGreenEntry.mainTexture = cameraYRoundaboutToGreenEntry.targetTexture;
+
+
+
+
+
+
+        if (cameraYRoundaboutToGreenExit.targetTexture != null)
+        {
+            cameraYRoundaboutToGreenExit.targetTexture.Release();
+
+
+        }
+
+        cameraYRoundaboutToGreenExit.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatYRoundaboutToGreenExit.mainTexture = cameraYRoundaboutToGreenExit.targetTexture;
+
+
+
+        //
+
+
+
+
+
+
+
+
+
+
+
+        //SETTING GREEN TO ROUNDABOUT CAMERAS
+        if (cameraGToRoundaboutEntry.targetTexture != null)
+        {
+            cameraGToRoundaboutEntry.targetTexture.Release();
+
+
+        }
+
+        cameraGToRoundaboutEntry.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatGToRoundaboutEntry.mainTexture = cameraGToRoundaboutEntry.targetTexture;
+
+
+
+
+
+
+        if (cameraGToRoundaboutExit.targetTexture != null)
+        {
+            cameraGToRoundaboutExit.targetTexture.Release();
+
+
+        }
+
+        cameraGToRoundaboutExit.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatGToRoundaboutExit.mainTexture = cameraGToRoundaboutExit.targetTexture;
+
+
+
+        //
+
+
+        //Setting Green roundabout to red room
+
+        if (cameraGRoundaboutToRedEntry.targetTexture != null)
+        {
+            cameraGRoundaboutToRedEntry.targetTexture.Release();
+
+
+        }
+
+        cameraGRoundaboutToRedEntry.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatGRoundaboutToRedEntry.mainTexture = cameraGRoundaboutToRedEntry.targetTexture;
+
+
+
+
+
+
+        if (cameraGRoundaboutToRedExit.targetTexture != null)
+        {
+            cameraGRoundaboutToRedExit.targetTexture.Release();
+
+
+        }
+
+        cameraGRoundaboutToRedExit.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        cameraMatGRoundaboutToRedExit.mainTexture = cameraGRoundaboutToRedExit.targetTexture;
+
+
+        //
+       
+
+
     }
 
 
-
-
-
+    //
 
 
 
 }
+
+
+
+
+
+
+
+
+
