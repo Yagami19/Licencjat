@@ -8,14 +8,27 @@ public class PortalCamera : MonoBehaviour
     public Transform portalOne;
     public Transform portalTwo;
 
-
-
-    // Update is called once per frame
     void Update()
-
     {
-
         Vector3 playerPositionFromPortal = playerCam.position - portalTwo.position;
         transform.position = portalOne.position + playerPositionFromPortal;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

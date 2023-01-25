@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/_Legacy.unity
+- path: Assets/Scenes/Base_Rooms.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

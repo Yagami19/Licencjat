@@ -8,39 +8,17 @@ public class PrefabScript : MonoBehaviour
     public Camera XXXXCAMERA;
     public Material XXXMATERIAL;
 
-
     public Camera YYYCAMERA;
     public Material YYYMATERIAL;
-
-    //
-
-
-
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
-
-
-
         //SETTING GREEN CAMERAS
         if (XXXXCAMERA.targetTexture != null)
         {
             XXXXCAMERA.targetTexture.Release();
-
-
         }
-
         XXXXCAMERA.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
         XXXMATERIAL.mainTexture = XXXXCAMERA.targetTexture;
-
-
-
-
-
-
         if (YYYCAMERA.targetTexture != null)
         {
             YYYCAMERA.targetTexture.Release();
@@ -50,17 +28,5 @@ public class PrefabScript : MonoBehaviour
 
         YYYCAMERA.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
         YYYMATERIAL.mainTexture = YYYCAMERA.targetTexture;
-
-
-
-        //
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
